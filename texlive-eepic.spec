@@ -63,3 +63,17 @@ commands.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1e-2
++ Revision: 751329
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.1e-1
++ Revision: 718311
+- texlive-eepic
+- texlive-eepic
+- texlive-eepic
+- texlive-eepic
+
