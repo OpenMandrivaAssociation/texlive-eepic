@@ -6,7 +6,7 @@
 # catalog-version 1.1e
 Name:		texlive-eepic
 Version:	1.1e
-Release:	4
+Release:	5
 Summary:	Extensions to epic and the LaTeX drawing tools
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/eepic
