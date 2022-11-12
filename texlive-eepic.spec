@@ -1,18 +1,12 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/latex/contrib/eepic
-# catalog-date 2009-09-25 23:06:49 +0200
-# catalog-license pd
-# catalog-version 1.1e
 Name:		texlive-eepic
-Version:	1.1e
-Release:	11
+Version:	15878
+Release:	1
 Summary:	Extensions to epic and the LaTeX drawing tools
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/eepic
 License:	PD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/eepic.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/eepic.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/eepic.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/eepic.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -28,12 +22,12 @@ filled circles and ellipses. The package uses tpic \special
 commands.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -56,24 +50,10 @@ commands.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1e-2
-+ Revision: 751329
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.1e-1
-+ Revision: 718311
-- texlive-eepic
-- texlive-eepic
-- texlive-eepic
-- texlive-eepic
-
