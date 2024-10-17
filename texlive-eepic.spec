@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	Extensions to epic and the LaTeX drawing tools
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/eepic
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/eepic
 License:	PD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/eepic.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/eepic.doc.r%{version}.tar.xz
